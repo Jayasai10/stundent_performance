@@ -87,7 +87,7 @@ export default function Home() {
         <ProfileRadarChart student={selectedStudent} />
       </div>
 
-      <div className="bg-white p-6 rounded-lg shadow-md overflow-x-auto">
+      <div className="bg-white p-6 rounded-lg shadow-md overflow-x-auto mb-8">
         <div className="mb-4">
           <input
             type="text"
@@ -132,6 +132,15 @@ export default function Home() {
             ))}
           </tbody>
         </table>
+      </div>
+
+      <div className="bg-white p-6 rounded-lg shadow-md">
+        <h2 className="text-2xl font-bold mb-4 text-slate-800">Key Findings & Insights</h2>
+        <div className="text-slate-700 space-y-2">
+          <p><strong>1. Persona Anomaly:</strong> The clustering revealed that final assessment scores do not always correlate with cognitive skill profiles. We identified several high-scoring students who were categorized in the 'Struggling' persona due to low attention and focus scores, highlighting hidden risks.</p>
+          <p><strong>2. Attention is Key:</strong> The scatter plot shows a clear positive correlation between a student's attention score and their final assessment score. This suggests that initiatives to improve student attention could have a significant impact on performance.</p>
+          <p><strong>3. Skill Distribution:</strong> Across the student body, 'Comprehension' and 'Retention' are the strongest average skills, while 'Attention' is the lowest. This may indicate a need for more engaging teaching methods to maintain student focus during lessons.</p>
+        </div>
       </div>
     </main>
   );
